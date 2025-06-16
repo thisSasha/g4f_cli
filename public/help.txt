@@ -1,0 +1,52 @@
+g4f_cli — Help
+
+USAGE:
+  command [flags] [args]
+
+GENERAL NOTES:
+  • Use quotes if arguments or flag values contain spaces.
+    Examples:
+      --provider=Blackbox AI          → ❌
+      --provider="Blackbox AI"        → ✅
+      use --model=GPT "Hello World"   → message: Hello World
+      use --model=GPT Hello World     → message: Hello
+
+AVAILABLE COMMANDS:
+  help
+    Show this help message
+      --type=py     Print in console   (alias: -p)
+      --type=html   Show as HTML page  (alias: -h)
+  version
+    Display current version of g4f and g4f_cli
+  update
+    Update g4f and g4f_cli
+      --only-cli    Update only g4f_cli
+  echo <text>
+    Print the input text back to console
+  find [flags] [keywords]
+    Search for models or providers by keyword
+      <keyword>      A string to match (e.g., chat, free, gpt)
+      --model        Search models (default; alias: -m)
+      --provider     Search providers (alias: -p)
+      --and          Match all keywords (default; alias: -a)
+      --or           Match any of the keywords (alias: -o)
+  get [flags] <entity>
+    Get providers/models for provider/model
+      <entity>       Provider or model (If not --all: required)
+      --model        Get models for provider (default; alias: -m)
+      --provider     Get providers for model (alias: -p)
+      --all          Get all providers/models (alias: -a)
+      
+  use [flags] <message>
+    Get AI response to a message
+      <message>        Input string (required)
+      --model=?        Specify the model to use
+      --provider=?     Specify the provider to use
+  copy <index>
+    Copies the results of other commands. Helper command
+
+EXAMPLES:
+  use --provider="Blackbox AI" --model=gpt-3.5 "Hello, world"
+  find --provider openai gpt turbo
+  help --type=py
+  update --only-cli
