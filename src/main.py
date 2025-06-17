@@ -201,7 +201,7 @@ class CommandUpdate:
 
     def execute(args, flags):
         if flags.get("only-cli", False):
-            logger.info("Updating g4f_cli...")
+            logger.F("Updating g4f_cli...")
             process = subprocess.Popen(
                 [sys.executable, "-m", "pip", "install", "-U", "."],
                 stdout=subprocess.PIPE,
@@ -236,6 +236,7 @@ class CommandVersion:
         logger.info(f"G4F_CLI v{VERSION}")
         logger.info("Author: thisDevSasha")
         logger.info("Source code: https://github.com/thisSasha/g4f_cli")
+        logger.info("License: GPL v3")
 
 
 #
