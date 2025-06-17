@@ -54,8 +54,8 @@ g4f >
 > **Примеры команд**
 >
 > ```bash
-> g4f > find --provider openai gpt turbo
-> g4f > use --model=gpt-3.5 --provider=BaseProvider "Привет, мир"
+> g4f > find --provider open ai
+> g4f > use --model=gpt_4 --provider=BaseProvider "Привет, мир"
 > g4f > get --all models
 > g4f > copy 2
 > g4f > version
@@ -76,15 +76,16 @@ g4f >
 │   ├── main.py           # Точка входа и REPL-цикл
 │   ├── cli.py            # Логика prompt-toolkit, парсинг флагов
 │   └── g4f_execute.py    # Основные действия: find, call, get, update
-└── run.{sh|exe}          # Скрипты запуска
+└── run.{sh|bat}          # Скрипты запуска
 ```
 
 - `main.py` инициализирует окружение и обрабатывает команды
 - `cli.py` реализует парсинг команд, аргументов, историю
 - `g4f_execute.py` вызывает g4f.ChatCompletion и анализирует вывод
 
-## Socials
+## 📄 Инфо
 
-> **Автор:** thisDevSasha  
-> **Репозиторий:** [https://github.com/thisSasha/g4f_cli](https://github.com/thisSasha/g4f_cli)  
-> **Нашли ошибку:** [https://github.com/thisSasha/g4f_cli/issues](https://github.com/thisSasha/g4f_cli/issues)
+> **Автор:** thisDevSasha  <br/>
+> **Репозиторий:** [https://github.com/thisSasha/g4f_cli](https://github.com/thisSasha/g4f_cli)    <br/>
+> **Нашли ошибку:** [https://github.com/thisSasha/g4f_cli/issues](https://github.com/thisSasha/g4f_cli/issues)  <br/>
+> **Лицензия:** [GPL v3](https://github.com/thisSasha/g4f\_cli/blob/main/LICENSE)  <br/>
