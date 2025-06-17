@@ -2,6 +2,8 @@
 
 [**G4F Repository**](https://github.com/techwithanirudh/g4f?tab=readme-ov-file)
 
+![Gpt4Free CLI Banner](/public/banner.svg)
+
 ## ✨ Обзор
 
 Gpt4Free Cli — это лёгкий CLI-интерфейс на Python к библиотеке [g4f](https://pypi.org/project/g4f/).  
@@ -39,7 +41,6 @@ pip install -r requirements.txt
 ```bash
 chmod +x ./run.sh
  ./run.sh # Linux и macOS
-
 .\run.exe # Windows
 
 ```
@@ -84,6 +85,6 @@ g4f >
 
 ## Socials
 
-**Автор:** thisDevSasha
-**Репозиторий:** [https://github.com/thisSasha/g4f\_cli](https://github.com/thisSasha/g4f_cli)
-**Ошибки и фичи:** [https://github.com/thisSasha/g4f\_cli/issues](https://github.com/thisSasha/g4f_cli/issues)
+> **Автор:** thisDevSasha  
+> **Репозиторий:** [https://github.com/thisSasha/g4f_cli](https://github.com/thisSasha/g4f_cli)  
+> **Нашли ошибку:** [https://github.com/thisSasha/g4f_cli/issues](https://github.com/thisSasha/g4f_cli/issues)
