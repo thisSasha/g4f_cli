@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ```bash
 chmod +x ./run.sh
  ./run.sh # Linux и macOS
-.\run.exe # Windows
+.\run.bat # Windows
 
 ```
 
